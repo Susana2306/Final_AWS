@@ -23,9 +23,9 @@ variable "github_branch" {
 }
 
 variable "codeconnection_arn" {
-  description = "ARN de una conexión de CodeConnections YA ACTIVADA."
+  description = "ARN de una conexión de CodeConnections"
   type        = string
-  default     = ""
+  default     = "arn:aws:codeconnections:us-east-1:808644003384:connection/e29b8190-c05e-4622-89cf-f4c19e46f038"
 }
 
 variable "container_name" {
