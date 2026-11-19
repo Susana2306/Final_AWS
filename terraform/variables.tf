@@ -13,7 +13,7 @@ variable "project_name" {
 variable "github_repo" {
   description = "Repositorio"
   type        = string
-  default     = "Susana2306/Final_AWS"
+  default     = "arn:aws:codeconnections:us-east-1:808644003384:connection/e29b8190-c05e-4622-89cf-f4c19e46f038"
 }
 
 variable "github_branch" {
