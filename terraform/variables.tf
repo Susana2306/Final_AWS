@@ -54,7 +54,7 @@ variable "task_memory" {
 variable "build_initial_image" {
   description = "Imagen inicial"
   type        = bool
-  default     = true
+  default     = false
 }
 
 variable "instance_type" {
