@@ -15,7 +15,7 @@ terraform init
 terraform apply
 ```
 
-1. Activa la conexión de GitHub (output `siguiente_paso`) si es nueva.
+1. Activa la conexión de GitHub (consola: Developer Tools → Connections) si es nueva.
 2. Crea un CNAME en tu dominio hacia el output `alb_dns_name`.
 3. En CodePipeline: **Release change** (o haz un push), aprueba la etapa manual.
 

@@ -89,9 +89,3 @@ variable "cpu_target" {
   type        = number
   default     = 10
 }
-
-variable "domain_name" {
-  description = "Dominio externo que apunta al ALB"
-  type        = string
-  default     = "www.lfmcsss.space"
-}

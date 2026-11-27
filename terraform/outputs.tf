@@ -7,10 +7,6 @@ output "url_alb" {
   value = "http://${aws_lb.main.dns_name}"
 }
 
-output "url_dominio" {
-  value = var.domain_name == "" ? "(configura domain_name)" : "http://${var.domain_name}"
-}
-
 output "ecr_repository_url" {
   value = aws_ecr_repository.app.repository_url
 }
@@ -30,8 +26,4 @@ output "pipeline_name" {
 output "codeconnection_arn" {
   description = ""
   value       = local.connection_arn
-}
-
-output "siguiente_paso" {
-  value = var.codeconnection_arn == "" ? ""
 }
