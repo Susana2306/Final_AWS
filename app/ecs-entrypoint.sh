@@ -1,3 +1,4 @@
+#!/bin/sh
 #  - ID de la tarea: endpoint de metadatos de ECS v4 (TaskARN)
 #  - Zona de disponibilidad e ID de instancia: metadatos de la instancia EC2 (IMDSv2)
 # Reemplaza __TASK_ID__, __TASK_SHORT__, __AZ__, __INSTANCE_ID__ y __APP_VERSION__
