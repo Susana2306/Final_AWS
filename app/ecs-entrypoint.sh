@@ -48,5 +48,5 @@ sed -i \
 
 echo "[ecs-metadata] Tarea: ${TASK_ID} | AZ: ${AZ} | Instancia: ${INSTANCE_ID} | Imagen: ${APP_VERSION:-dev}"
 
-# Arranca Apache (o el comando que se pase al contenedor)
+
 exec "$@"
