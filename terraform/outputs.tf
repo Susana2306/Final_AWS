@@ -28,10 +28,10 @@ output "pipeline_name" {
 }
 
 output "codeconnection_arn" {
-  description = "Guárdalo en terraform.tfvars (codeconnection_arn) después de activarla"
+  description = ""
   value       = local.connection_arn
 }
 
 output "siguiente_paso" {
-  value = var.codeconnection_arn == "" ? "Activa la conexion en: Consola > Developer Tools > Settings > Connections > ${substr("${local.name}-github", 0, 32)} > Update pending connection" : "Conexion existente en uso. Haz push o 'Release change' en el pipeline."
+  value = var.codeconnection_arn == "" ? ""
 }
