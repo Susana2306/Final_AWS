@@ -1,9 +1,7 @@
-#!/bin/sh
-# Punto de entrada del contenedor. Se ejecuta antes de arrancar Apache:
 #  - ID de la tarea: endpoint de metadatos de ECS v4 (TaskARN)
 #  - Zona de disponibilidad e ID de instancia: metadatos de la instancia EC2 (IMDSv2)
 # Reemplaza __TASK_ID__, __TASK_SHORT__, __AZ__, __INSTANCE_ID__ y __APP_VERSION__
-# en index.html y luego ejecuta el comando original de la imagen (httpd-foreground).
+# en index.html y luego ejecuta el comando original de la imagen.
 
 HTML="${HTML_FILE:-/usr/local/apache2/htdocs/index.html}"
 TASK_ID="local (fuera de ECS)"
